@@ -4,7 +4,6 @@
     --main-bg: hsl(233, 47%, 7%);
     --card-bg: hsl(244, 38%, 16%);
     --soft-violet-accent: hsl(277, 64%, 61%);
-    --violet-img-bg: hsl(277, 100%, 33%);
 
     --white: hsl(0, 0%, 100%);
     --main-p: hsla(0, 0%, 100%, 0.75);
@@ -42,14 +41,15 @@ main {
 .card__img-block {
     position: relative;
     line-height: 0; /* without it the block's height is bigger than of its content */
-    background-color: var(--violet-img-bg);
+    background-color: var(--soft-violet-accent);
 }
 
 .card__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.5;
+    mix-blend-mode: multiply;
+    opacity: 0.8;
 }
 
 .card__text {
